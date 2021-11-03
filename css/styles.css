@@ -76,7 +76,7 @@ header {
 .btn {
   font-size: 1.6rem;
   font-weight: 700;
-  width: 200px;
+  width: 220px;
   margin: 15rem auto 7rem auto;
   background-color: var(--secondary);
   border: none;
@@ -99,13 +99,13 @@ section {
 
 .headers {
   font-size: 3rem;
-  margin: auto;
+  margin: 5rem auto;
 }
 
 .main-services img {
-  width: 200px;
+  width: 220px;
   border-radius: 20px;
-  margin: 9rem auto;
+  margin: 5rem auto;
 }
 
 
@@ -162,8 +162,8 @@ section {
 .main-reviews--container img {
   width: 100%;
   height: auto;
-  max-height: 212px;
-  max-width: 212px;
+  max-height: 220px;
+  max-width: 220px;
   border-radius: 20px;
   margin-top: 16px;
   margin-bottom: 20px;
@@ -224,6 +224,7 @@ section {
   margin-top: 5rem;
   color: #222831;
   font-size: 0.7rem;
+  padding: 0 20px;
 }
 
 .copy-right--container img {
