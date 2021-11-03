@@ -50,7 +50,7 @@ header {
 
 .nav-bar--container i {
   color: var(--soft-white);
-  font-size: 3rem;
+  font-size: 4.5rem;
 }
 
 .header-main--text {
@@ -66,7 +66,7 @@ header {
   text-align: center;
 }
 
-.header-main--text p {
+.texts{
   font-size: 1.6rem;
   font-weight: 300;
   margin-top: 6rem;
@@ -77,7 +77,7 @@ header {
   font-size: 1.6rem;
   font-weight: 700;
   width: 200px;
-  margin: 5rem auto;
+  margin: 15rem auto 7rem auto;
   background-color: var(--secondary);
   border: none;
   color: var(--soft-white);
@@ -86,6 +86,151 @@ header {
 }
 
 .down-arrow {
-  font-size: 5rem;
+  font-size: 7rem;
   margin: auto;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 7rem auto;
+}
+
+.headers {
+  font-size: 3rem;
+  margin: auto;
+}
+
+.main-services img {
+  width: 200px;
+  border-radius: 20px;
+  margin: 9rem auto;
+}
+
+
+.sub-headers {
+  font-size: 2.5rem;
+  margin: auto;
+  text-align: center;
+}
+
+.main-services .btn {
+  margin-top: 4rem;
+}
+
+.pattern-left {
+  position: absolute;
+  left: 0;
+}
+
+.pattern-right {
+  position: absolute;
+  right: 0;
+  z-index: -100;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+}
+
+.main-reviews--container {
+  background-color: var(--secondary);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 4rem auto;
+  width: 90%;
+  height: 450px;
+  max-width: 260px;
+  max-height: 450px;
+  align-items: center;
+  box-shadow: 9px 9px 60px rgba(0, 0, 0, 0.25);
+}
+
+.dark-container {
+  background-color: var(--primary);
+}
+
+.main-reviews--content {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.main-reviews--container img {
+  width: 100%;
+  height: auto;
+  max-height: 212px;
+  max-width: 212px;
+  border-radius: 20px;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+
+.main-reviews--text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.main-reviews--text h5 {
+  align-items: flex-end;
+}
+
+.about-us--container {
+  margin: auto;
+  text-align: center;
+  width: 90%;
+}
+
+.about-us--container img {
+  width: 290px;
+  margin: 5rem 0;
+}
+
+.about-us--container .texts {
+  padding-bottom: 5rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  margin: auto;
+  width: 90%;
+  row-gap: 30px;
+}
+
+.list-items {
+  text-align: center;
+}
+
+.footer-container ul li {
+  list-style: none;
+  margin-top: 10px;
+}
+.footer-container ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.copy-right--container {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--grey);
+  margin-top: 5rem;
+  color: #222831;
+  font-size: 0.7rem;
+}
+
+.copy-right--container img {
+  width: 26px;
+  height: 26px;
+}
+
+.copy-right--container .social-icons {
+  font-size: 1.8rem;
 }
