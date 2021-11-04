@@ -433,11 +433,12 @@ hr {
     grid-template-columns: 1fr 1fr;
     width: 90%;
     margin: 30px 0;
+    column-gap: 20px;
   }
 
   .main-reviews--container {
     height: auto;
-    max-width: 100%;
+    min-width: 550px;
   }
 
   .main-reviews--text {
@@ -454,7 +455,7 @@ hr {
   }
 
   .reviews-grid {
-    grid-template-columns: repeat(auto-fill, minmax(465px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
   }
 
   .about-us--content {
@@ -483,7 +484,8 @@ hr {
   }
 
   .reviews-grid {
-    column-gap: 25px;
+    column-gap: 90px;
+    grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));
   }
 
   .about-us--container img {
