@@ -1,28 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <title>Document</title>
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="background-img"></div>
+  <div class="container">
     <header>
-      <div class="background-img"></div>
       <nav class="nav-bar--container">
         <div class="logo">
           <h1>PETTO</h1>
@@ -30,6 +24,12 @@
         <div>
           <i class="bx bx-menu-alt-right"></i>
         </div>
+          <ul class="nav-bar--items">
+            <li><a href="#">inicio</a></li>
+            <li><a href="#">servicios</a></li>
+            <li><a href="#">conócenos</a></li>
+            <button class="nav-bar--btn"><span>quiero un paseador</span></button>
+          </ul>
       </nav>
       <div class="header-main--text">
         <h2>Un universo completo para mascotas</h2>
@@ -44,24 +44,37 @@
     </header>
     <main>
       <section class="main-services">
+        <div class="circle-left">
+          <img src="./assets/imgs/circle-left.png" alt="">
+        </div>
         <h2 class="headers">Paseos</h2>
-        <img src="./assets/imgs/walk-dog.png" alt="dog with a leash" />
-        <h3 class="sub-headers">Pasear a nuestros peludos</h3>
-        <p class="texts">
-          nunca fue tan seguro. En PETTO lo primero es la seguridad, por lo que
-          en nuestro servicio de paseo, tendrás la confianza de que nuestros
-          paseadores están escogidos minusiosamente, garantizando su amor por
-          los animales, como si fueran los propios.
-        </p>
-        <button class="btn"><span>¡Quiero un paseo!</span></button>
-        <img src="./assets/imgs/tracking-service.png" alt="tracking map" />
-        <h3 class="sub-headers">Seguimiento en tiempo real</h3>
-        <p class="texts">
-          Mientras te prestamos el servicio, estará habilitada la opción de
-          hacerle seguimivento a tu peludito en tiempo real, mediante Whatsapp,
-          no solo estarás en contacto con el paseador constantemente, sino que
-          podrás verlo en movimiento.
-        </p>
+        <div class="main-services--container">
+          <div class="main-services--left">
+            <img src="./assets/imgs/walk-dog.png" alt="dog with a leash" />
+            <div class="left-content">
+              <h3 class="sub-headers">Pasear a nuestros peludos</h3>
+              <p class="texts">
+                nunca fue tan seguro. En PETTO lo primero es la seguridad, por
+                lo que en nuestro servicio de paseo, tendrás la confianza de que
+                nuestros paseadores están escogidos minusiosamente, garantizando
+                su amor por los animales, como si fueran los propios.
+              </p>
+              <button class="btn"><span>¡Quiero un paseo!</span></button>
+            </div>
+          </div>
+          <div class="main-services--right">
+            <img src="./assets/imgs/tracking-service.png" alt="tracking map" />
+            <div class="right-content">
+              <h3 class="sub-headers">Seguimiento en tiempo real</h3>
+              <p class="texts">
+                Mientras te prestamos el servicio, estará habilitada la opción
+                de hacerle seguimivento a tu peludito en tiempo real, mediante
+                Whatsapp, no solo estarás en contacto con el paseador
+                constantemente, sino que podrás verlo en movimiento.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="main-reviews">
         <div class="pattern-right">
@@ -113,67 +126,88 @@
               </div>
             </div>
           </div>
+          <div class="main-reviews--container dark-container">
+            <div class="main-reviews--content">
+              <img src="./assets/imgs/pepe-paco-dog.jpg" alt="" />
+              <div class="main-reviews--text">
+                <h4>Pepe y Paco</h4>
+                <p>
+                  “El chico fue muy amable y comprensivo con los perros. Hicieron ejercicio suficiente para quemar la
+                  energía que debían quemar. Excelente!”
+                </p>
+                <h5>Diego</h5>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="about-us">
         <div class="about-us--container">
           <h2 class="headers">Conócenos</h2>
-          <img src="./assets/imgs/akira-dog.png" alt="" />
-          <h3 class="sub-headers">Nuestra inspiración</h3>
-          <p class="texts">
-            Nuestro proyecto nació a partir de nuestra perrita, desde el logo,
-            hasta la idea de crear todo un universo. Su nombre es Akira, y
-            nuestra vida no sería lo mismo sin ella.
-            <br />
-            <br />
-            El amor por los animales nos impulsó a crear un proyecto donde
-            tengamos en cuenta los aspectos más importantes del cuidado de
-            nuestros peludos; veterinarias, educación y ejercicio, sitios donde
-            podamos ir con ellos, a tomar un café, trabajar, siempre al lado de
-            ellos.
-          </p>
-        </div>
-        <hr />
-      </section>
-      <footer class="footer-information">
-        <div class="footer-container">
-          <div class="list-items">
-            <h4>Website</h4>
-            <ul>
-              <li><a href="#">inicio</a></li>
-              <li><a href="#">servicios</a></li>
-              <li><a href="#">sobre nosotros</a></li>
-            </ul>
-          </div>
-          <div class="list-items">
-            <h4>Compañía</h4>
-            <ul>
-              <li><a href="#">términos y condiciones</a></li>
-              <li><a href="#">políticas de privacidad</a></li>
-              <li><a href="#">contacto</a></li>
-            </ul>
-          </div>
-          <div class="list-items">
-            <h4>Servicios</h4>
-            <ul>
-              <li><a href="#">caminador</a></li>
-              <li><a href="#">veterinarias</a></li>
-              <li><a href="#">educación</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="copy-right">
-          <div class="copy-right--container">
-            <img src="./assets/imgs/petto-logo.png" alt="" />
-            <h4>&copy PETTO - Design and developed by Juan Lopez</h4>
-            <div class="social-icons">
-              <i class="bx bxl-instagram"></i>
-              <i class="bx bxl-whatsapp"></i>
-              <i class="bx bxl-github"></i>
+          <div class="about-us--content">
+            <div class="about-us--left">
+              <img src="./assets/imgs/akira-dog.png" alt="" />
+            </div>
+            <div class="about-us--right">
+              <h3 class="sub-headers">Nuestra inspiración</h3>
+              <p class="texts">
+                Nuestro proyecto nació a partir de nuestra perrita, desde el logo,
+                hasta la idea de crear todo un universo. Su nombre es Akira, y
+                nuestra vida no sería lo mismo sin ella.
+                <br />
+                <br />
+                El amor por los animales nos impulsó a crear un proyecto donde
+                tengamos en cuenta los aspectos más importantes del cuidado de
+                nuestros peludos; veterinarias, educación y ejercicio, sitios donde
+                podamos ir con ellos, a tomar un café, trabajar, siempre al lado de
+                ellos.
+              </p>
             </div>
           </div>
-        </div>
-      </footer>
+          <hr />
+      </section>
     </main>
-  </body>
+    <footer class="footer-information">
+      <div class="footer-container">
+        <div class="list-items">
+          <h4>Website</h4>
+          <ul>
+            <li><a href="#">inicio</a></li>
+            <li><a href="#">servicios</a></li>
+            <li><a href="#">sobre nosotros</a></li>
+          </ul>
+        </div>
+        <div class="list-items">
+          <h4>Compañía</h4>
+          <ul>
+            <li><a href="#">términos y condiciones</a></li>
+            <li><a href="#">políticas de privacidad</a></li>
+            <li><a href="#">contacto</a></li>
+          </ul>
+        </div>
+        <div class="list-items">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="#">caminador</a></li>
+            <li><a href="#">veterinarias</a></li>
+            <li><a href="#">educación</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copy-right">
+        <div class="copy-right--container">
+          <div class="copy-right--right">
+            <img src="./assets/imgs/petto-logo.png" alt="" />
+          <h4>&copy PETTO - Design and developed by Juan Lopez</h4>
+          </div>
+          <div class="social-icons">
+            <i class="bx bxl-instagram"></i>
+            <i class="bx bxl-whatsapp"></i>
+            <i class="bx bxl-github"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+
 </html>
