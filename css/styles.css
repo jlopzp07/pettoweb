@@ -442,14 +442,14 @@ hr {
 
   .main-reviews--text {
     justify-content: space-between;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .main-reviews--container img {
     width: 360px;
     height: auto;
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 250px;
+    max-height: 250px;
     margin: 0;
   }
 
@@ -472,6 +472,10 @@ hr {
 
   .main-reviews--content {
     column-gap: 50px;
+  }
+
+  .main-reviews--text {
+    font-size: 1.2rem;
   }
 
   .main-reviews--container {
