@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet" />
   <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="./css/styles.css" />
-  <title>Document</title>
+  <title>PETTO Web</title>
 </head>
 
 <body>
@@ -25,10 +25,10 @@
           <i class="bx bx-menu-alt-right"></i>
         </div>
           <ul class="nav-bar--items">
-            <li><a href="#">inicio</a></li>
-            <li><a href="#">servicios</a></li>
-            <li><a href="#">conócenos</a></li>
-            <button class="nav-bar--btn"><span>quiero un paseador</span></button>
+            <a href="#body"><li>inicio</li></a>
+            <a href="#services"><li>servicios</li></a>
+            <a href="#about">conócenos</li></a>
+            <a class="nav-bar--btn" href="./walker-form.html">quiero un paseador</a>
           </ul>
       </nav>
       <div class="header-main--text">
@@ -39,10 +39,10 @@
           para nuestros amigos más fieles.
         </p>
       </div>
-      <button class="btn"><span>Quiero saber más</span></button>
-      <span class="down-arrow"><i class="bx bx-chevron-down"></i></span>
+      <a href="#services" class="btn">Quiero saber más</a>
+      <a href="#services" class="down-arrow"><i class="bx bx-chevron-down"></i></a>
     </header>
-    <main>
+    <main id="services">
       <section class="main-services">
         <div class="circle-left">
           <img src="./assets/imgs/circle-left.png" alt="">
@@ -59,7 +59,7 @@
                 nuestros paseadores están escogidos minusiosamente, garantizando
                 su amor por los animales, como si fueran los propios.
               </p>
-              <button class="btn"><span>¡Quiero un paseo!</span></button>
+              <a href="#" class="btn">¡Quiero un paseo!</a>
             </div>
           </div>
           <div class="main-services--right">
@@ -111,7 +111,7 @@
               </div>
             </div>
           </div>
-          <div class="main-reviews--container">
+          <div class="main-reviews--container dark-container">
             <div class="main-reviews--content">
               <img src="./assets/imgs/tony-dog.png" alt="" />
               <div class="main-reviews--text">
@@ -126,7 +126,7 @@
               </div>
             </div>
           </div>
-          <div class="main-reviews--container dark-container">
+          <div class="main-reviews--container">
             <div class="main-reviews--content">
               <img src="./assets/imgs/pepe-paco-dog.jpg" alt="" />
               <div class="main-reviews--text">
@@ -141,7 +141,7 @@
           </div>
         </div>
       </section>
-      <section class="about-us">
+      <section class="about-us" id="about">
         <div class="about-us--container">
           <h2 class="headers">Conócenos</h2>
           <div class="about-us--content">
