@@ -30,18 +30,19 @@
           <form action="https://formsubmit.co/jlopezp07@gmail.com" method="POST">
             <h2>Quiero un caminador</h2>
             <label for="name">Nombre humano</label>
-            <input type="text" id="name" placeholder="Ingresa tu nombre..." required />
+            <input type="text" id="name" placeholder="Ingresa tu nombre..." name="name" required/>
             <label for="dog-name">Nombre peludito(s)</label>
             <input
               type="text"
               id="dog-name"
               placeholder="Ingresa el nombre de tu peludo..."
+              name="dog-name"
               required
             />
             <div class="race-age">
               <div class="race">
                 <label for="race">Raza(s)</label>
-                <input type="text" id="race" placeholder="Raza..." required/>
+                <input type="text" id="race" placeholder="Raza..." name="dog-race" required/>
               </div>
               <div class="age">
                 <label for="age">Edad</label>
@@ -51,12 +52,13 @@
                   min="0"
                   max="25"
                   placeholder="1"
+                  name="dog-age"
                   required
                 />
               </div>
             </div>
             <label for="hours">¿Cuántas horas deseas contratar?</label>
-            <input type="number" id="hours" min="1" max="4" placeholder="1" required/>
+            <input type="number" id="hours" min="1" max="4" placeholder="1" name="time" required/>
             <label for="service">¿Qué tipo de paseo deseas?</label>
             <div class="rad">
               <input
@@ -91,6 +93,7 @@
             <textarea
               name="condition"
               id="condition"
+              name="condition"
               placeholder="Escríbenos si tiene alguna condición física, respiratoria o de cualquier índole..."
             ></textarea>
             <button class="form-btn"><span>Enviar</span></button>
