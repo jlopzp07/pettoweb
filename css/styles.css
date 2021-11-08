@@ -43,6 +43,10 @@ html {
   display: none;
 }
 
+.nav-bar--container .bx {
+  display: none;
+}
+
 .nav-bar--items.show {
   display: flex;
   flex-direction: column;
@@ -552,8 +556,6 @@ textarea {
   .nav-bar--items a:hover:not(:last-child) {
     border-bottom: 2px solid var(--soft-white);
   }
-
-
 
   .btn {
     margin-top: 8rem;
