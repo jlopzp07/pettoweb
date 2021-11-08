@@ -21,7 +21,7 @@ html {
   color: var(--soft-white);
 }
 
-header {
+.container header {
   display: flex;
   flex-direction: column;
 }
@@ -43,6 +43,11 @@ header {
   display: none;
 }
 
+.nav-bar--items.show {
+  display: flex;
+  flex-direction: column;
+}
+
 .background-img {
   position: absolute;
   z-index: -100;
@@ -55,15 +60,24 @@ header {
   background-repeat: no-repeat;
 }
 
-.logo h1 {
+.logo {
   font-family: 'Montserrat', sans-serif;
   font-size: 5rem;
   font-weight: 900;
 }
 
-.nav-bar--container i {
+
+i {
   color: var(--soft-white);
   font-size: 4.5rem;
+}
+
+i:hover {
+  color: var(--secondary);
+}
+
+a {
+  color: var(--soft-white);
 }
 
 .header-main--text {
@@ -290,21 +304,154 @@ hr {
   column-gap: 10px
 }
 
-.copy-right--container .social-icons {
+.copy-right--container .social-icons a i{
   font-size: 1.8rem;
 }
 
+
+/* CSS walker form starts here */
+
+.form-container {
+  width: 90%;
+  max-width: 530px;
+  margin: auto;
+}
+
+.header-container {
+  display: flex;
+  padding-top: 20px;
+  margin: 0 auto 40px auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form h2 {
+  font-size: 2rem;
+}
+
+label {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+input {
+  height: 33px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 15px;
+  padding-left: 10px;
+}
+
+input[type=number] {
+  width: 100px;
+}
+
+.race-age {
+  display: flex;
+  justify-content: space-between;
+}
+
+.race,
+.age {
+  display: flex;
+  flex-direction: column;
+}
+.race {
+  width: 190px;
+}
+
+.rad {
+  display: flex;
+  align-items: center;
+}
+
+.rad label {
+  font-size: 1.8rem;
+  margin: 10px 0;
+  padding: 0 20px;
+}
+
+input[type=radio] {
+  width: 2rem;
+  height: 2rem;
+  margin-top: 15px;
+}
+
+.date-picker {
+  width: 250px;
+  font-size: 1.4rem;
+  padding: 11px;
+}
+
+
+::placeholder {
+  font-size: 1.2rem;
+  padding: 5px;
+  opacity: 50%;
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+  margin: 10px 0;
+  padding: 5px 10px;
+  border-radius: 10px;
+  resize: none;
+}
+
+.form-btn {
+  width: 100%;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--soft-white);
+  background-color: var(--secondary);
+  border: 2px solid var(--secondary);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.form-btn:hover {
+  background-color: transparent;
+  transition: all 0.1s ease-in;
+}
+
+.thanks h1 {
+  font-size: 4vw;
+}
+
+.thanks h2 {
+  text-align: center;
+  font-size: 2vw;
+}
+
+.thanks img {
+  width: 20vw;
+}
+
+/* css form ends here */
+
+/*media queries starts here */
+
 @media (min-width: 768px) {
+
+  .header-main--text h2,
+  .texts{
+    text-align: left;
+  }
 
   .header-main--text {
     width: 590px;
     margin: 5%;
   }
 
-  .header-main--text h2,
-  .texts{
-    text-align: left;
-  }
 
   .headers {
     font-size: 5rem;
@@ -346,14 +493,21 @@ hr {
     font-size: 1.5rem;
   }
   
-  .copy-right--container .social-icons {
+  .copy-right--container .social-icons a i{
     font-size: 3rem;
   }
+
+  .form-container {
+    width: 530px;
+    margin: auto;
+  }
+
+
 }
 
 @media (min-width: 1024px) {
 
-  .logo h1 {
+  .logo {
     font-size: 8rem;
   }
 
@@ -398,6 +552,7 @@ hr {
   .nav-bar--items a:hover:not(:last-child) {
     border-bottom: 2px solid var(--soft-white);
   }
+
 
 
   .btn {
@@ -497,6 +652,34 @@ hr {
     width: 450px;
   }
 
+  .form-container {
+    width: 700px;
+    max-width: 700px;
+  }
+
+  .form-back {
+    background-color: #3A414B;
+    border-radius: 20px;
+    padding: 50px;
+    margin: auto;
+  }
+
+  .body-bg {
+    width: 100%;
+    height: 150vh;
+    max-height: auto;
+  }
+
+  .body-bg {
+    content: '';
+    width: 100%;
+    height: 170vh;
+    background-image: url("../assets/imgs/form-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+
 }
 
 @media (min-width: 1440px) {
@@ -546,37 +729,7 @@ hr {
     font-size: 1.5rem;
   }
 
-  .copy-right--container .social-icons {
+  .copy-right--container .social-icons a i {
     font-size: 5rem;
   }
-}
-
-/* CSS walker form */
-
-.header-container {
-  display: flex;
-  margin: auto;
-  justify-content: space-between;
-  width: 90%;
-}
-
-.body-bg {
-  background-image: url('../assets/imgs/form-bg.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-
-.thanks h1 {
-  font-size: 4vw;
-}
-
-.thanks h2 {
-  text-align: center;
-  font-size: 2vw;
-}
-
-.thanks img {
-  width: 20vw;
 }
