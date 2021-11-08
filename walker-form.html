@@ -20,11 +20,79 @@
     <title>Formulario Agenda Paseo</title>
   </head>
   <body class="body-bg">
-    <header>
-      <div class="header-container">
-        <i class="bx bx-chevron-left"></i>
-        <h1 class="logo">PETTO</h1>
+    <div class="form-container">
+      <header class="header-container">
+        <a href="index.html"><i class="bx bx-chevron-left logo"></i></a>
+        <a href="index.html"><h1 class="logo">PETTO</h1></a>
+      </header>
+      <div class="form-back">
+        <main>
+          <form action="">
+            <h2>Quiero un caminador</h2>
+            <label for="name">Nombre humano</label>
+            <input type="text" id="name" placeholder="Ingresa tu nombre..." />
+            <label for="dog-name">Nombre peludito(s)</label>
+            <input
+              type="text"
+              id="dog-name"
+              placeholder="Ingresa el nombre de tu peludo..."
+            />
+            <div class="race-age">
+              <div class="race">
+                <label for="race">Raza(s)</label>
+                <input type="text" id="race" placeholder="Raza..." />
+              </div>
+              <div class="age">
+                <label for="age">Edad</label>
+                <input
+                  type="number"
+                  id="age"
+                  min="0"
+                  max="25"
+                  placeholder="1"
+                />
+              </div>
+            </div>
+            <label for="hours">¿Cuántas horas deseas contratar?</label>
+            <input type="number" id="hours" min="1" max="4" placeholder="1" />
+            <label for="service">¿Qué tipo de paseo deseas?</label>
+            <div class="rad">
+              <input
+                type="radio"
+                id="personilized"
+                name="service-type"
+                value="personalizado"
+              />
+              <label for="personilized">Personalizado</label>
+              <input
+                type="radio"
+                id="group"
+                name="service-type"
+                value="grupal"
+              />
+              <label for="group">Grupal</label>
+            </div>
+            <label for="date">¿Para cuándo deseas el servicio?</label>
+            <input
+              class="date-picker"
+              type="datetime-local"
+              id="date"
+              name="date"
+            />
+            <label for="condition">Condiciones físicas</label>
+            <p>
+              Por favor indica si tu peludito tiene alguna condición física que
+              debamos tener en cuenta
+            </p>
+            <textarea
+              name="condition"
+              id="condition"
+              placeholder="Escríbenos si tiene alguna condición física, respiratoria o de cualquier índole..."
+            ></textarea>
+            <button class="form-btn"><span>Enviar</span></button>
+          </form>
+        </main>
       </div>
-    </header>
+    </div>
   </body>
 </html>
