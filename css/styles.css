@@ -427,6 +427,11 @@ textarea {
   transition: all 0.1s ease-in;
 }
 
+.thanks {
+  margin-top: 70px;
+  text-align: center;
+}
+
 .thanks h1 {
   font-size: 4vw;
 }
