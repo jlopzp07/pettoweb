@@ -410,6 +410,10 @@ textarea {
   resize: none;
 }
 
+.phone {
+  width: 250px;
+}
+
 .form-btn {
   width: 100%;
   margin: 10px auto;
