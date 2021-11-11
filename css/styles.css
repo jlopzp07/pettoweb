@@ -45,13 +45,27 @@ html {
 }
 
 .nav-bar--container .bx {
-  display: none;
+  display: inline-block;
+  z-index: 1000;
 }
 
 .nav-bar--items.show {
+  position: absolute;
+  width: 70vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  padding-top: 180px;
+  padding-left: 20px;
+  row-gap: 40px;
   display: flex;
   flex-direction: column;
+  font-size: 2rem;
+  background-color: var(--formBg);
+  box-shadow: 10px 10px 80px var(--primary);
 }
+
+
 
 .background-img {
   position: absolute;
@@ -98,7 +112,6 @@ a {
 .header-main--text h2 {
   font-size: 3rem;
   font-weight: 800;
-  margin-top: 5rem;
   text-align: center;
 }
 
@@ -112,7 +125,7 @@ a {
 .texts {
   font-size: 1.6rem;
   font-weight: 300;
-  margin-top: 6rem;
+  margin: 6rem 0;
   text-align: center;
 }
 
@@ -281,7 +294,13 @@ hr {
 .footer-container ul li {
   list-style: none;
   margin-top: 10px;
+  border-bottom: 2px solid transparent;
 }
+
+.footer-container ul li a:hover {
+  border-bottom: 2px solid var(--soft-white);
+}
+
 .footer-container ul li a {
   text-decoration: none;
   color: #fff;
@@ -472,9 +491,29 @@ textarea {
 }
 /* css form ends here */
 
+/* vets page css starts here */
+
+.email-input {
+  width: 400px;
+  margin: auto;
+}
+
+.no-page-btn {
+  width: 300px;
+  border-radius: 15px;
+}
+
+/* vets page css ends here */
+
+
 /*media queries starts here */
 
 @media (min-width: 768px) {
+
+  .nav-bar--items.show {
+    width: 50vw;
+  }
+
   .header-main--text h2,
   .texts {
     text-align: left;
@@ -539,6 +578,10 @@ textarea {
     font-size: 8rem;
   }
 
+  .nav-bar--container .bx {
+    display: none;
+  }
+
   .nav-bar--btn {
     border: none;
     background-color: var(--secondary);
@@ -570,19 +613,19 @@ textarea {
     list-style: none;
   }
 
-  .nav-bar--items a:not(:last-child) {
+  .nav-bar--items li:not(:last-child) {
     color: var(--soft-white);
     text-decoration: none;
     margin-right: 50px;
     border-bottom: 2px transparent var(--soft-white);
   }
 
-  .nav-bar--items a:hover:not(:last-child) {
+  .nav-bar--items li:hover:not(:last-child) {
     border-bottom: 2px solid var(--soft-white);
   }
 
   .btn {
-    margin-top: 8rem;
+    margin-top: 2rem;
   }
 
   .main-services--left {
