@@ -115,6 +115,7 @@ a {
   text-align: center;
 }
 
+
 .main-services--left,
 .main-services--right {
   display: flex;
@@ -125,7 +126,7 @@ a {
 .texts {
   font-size: 1.6rem;
   font-weight: 300;
-  margin: 6rem 0;
+  margin: 3rem 0;
   text-align: center;
 }
 
