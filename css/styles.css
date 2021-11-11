@@ -115,6 +115,14 @@ a {
   text-align: center;
 }
 
+.header-main--text .social-icons {
+  text-align: center;
+}
+
+.header-main--text .social-icons a i {
+  margin-right: 20px;
+}
+
 
 .main-services--left,
 .main-services--right {
@@ -139,7 +147,7 @@ a {
 .btn {
   font-size: 1.6rem;
   font-weight: 700;
-  margin: 15rem auto 7rem auto;
+  margin: 4rem auto 0 auto;
   background-color: var(--secondary);
   border: none;
   color: var(--soft-white);
@@ -331,7 +339,7 @@ hr {
   column-gap: 10px;
 }
 
-.copy-right--container .social-icons a i {
+.copy-right--container .social-icons {
   font-size: 1.8rem;
 }
 
@@ -516,7 +524,8 @@ textarea {
   }
 
   .header-main--text h2,
-  .texts {
+  .texts,
+  .header-main--text .social-icons {
     text-align: left;
   }
 
