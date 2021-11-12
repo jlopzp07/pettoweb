@@ -105,7 +105,7 @@ a {
 
 .header-main--text {
   width: 90%;
-  margin: auto;
+  margin: 60px auto;
   padding: 0;
 }
 
@@ -117,6 +117,7 @@ a {
 
 .header-main--text .social-icons {
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .header-main--text .social-icons a i {
@@ -147,7 +148,7 @@ a {
 .btn {
   font-size: 1.6rem;
   font-weight: 700;
-  margin: 4rem auto 0 auto;
+  margin: 40px auto 50px auto;
   background-color: var(--secondary);
   border: none;
   color: var(--soft-white);
