@@ -348,7 +348,6 @@ hr {
 /* CSS walker form starts here */
 
 .form-container {
-  width: 90%;
   max-width: 530px;
   margin: auto;
 }
@@ -365,6 +364,7 @@ form {
   display: flex;
   flex-direction: column;
 }
+
 
 form h2 {
   font-size: 2rem;
@@ -505,7 +505,7 @@ textarea {
 /* vets page css starts here */
 
 .email-input {
-  width: 400px;
+  width: 300px;
   margin: auto;
 }
 
@@ -758,6 +758,10 @@ textarea {
     background-image: url("../assets/imgs/form-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  .email-input {
+    width: 500px;
   }
 }
 
